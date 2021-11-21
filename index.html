@@ -3,17 +3,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Squid Game's "Reg light, green light" with body tracking using
-      TensorFlow.js - by Charlie Gerard
-    </title>
+    <link rel="icon" href="./favicon.ico"> 
+    <title>Red Light, Green Light - Juego del Calamar</title>
     <meta
       property="og:description"
-      content="Play a prototype of 'Red light, green light' using body movement detection"
+      content="Juego del Calamar (Squid Game) usando modelo de rastreo de moviento"
     />
     <meta
       name="description"
-      content="Play a prototype of 'Red light, green light' using body movement detection"
+      content="Juego del Calamar (Squid Game) usando modelo de rastreo de moviento"
     />
     <meta
       property="og:image"
@@ -23,6 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.133.1/build/three.min.js"></script>
@@ -61,46 +60,46 @@
         />
       </svg>
       <section class="intro is-visible">
-        <h1>Red Light, Green Light</h1>
-        <p>You have 15 seconds to reach the end of the field.</p>
+       <h1>Luz verde, luz roja (Gallinita ciega)</h1>
+        <p>Tienes 15 segundos para llegar al final de la pista.</p>
         <p>
-          When the doll is not watching, move forward until you reach your
-          computer.
+        Cuando la muñeca no esté mirando, muéve hacia delante hasta llegar a tu ordenador/móvil.
         </p>
         <p>
-          If movement is detected when the doll is watching, you are eliminated.
+          Si te mueves cuando la muñeca esté mirando, perderás.
         </p>
         <p>
-          When you're ready, click 'Start' and take steps back as far as you
-          can.
+          Cuando estés listo, pulsa <b>'Start'</b> y échate hacia atrás tanto como puedas.
         </p>
+         <p class="note">
+        Este juego está diseñado para ser ejecutado en un portátil/pc con webcam en una habitación con cierto fondo.<br />
+        Creado por <b>Manu Romero</b> para los <b>Carratalá y Carassa</b>.
+      </p>
 
         <p class="countdown"></p>
-        <button class="cta start">Loading...</button>
+        <button class="cta start">Cargando...</button>
       </section>
 
       <section class="dead is-hidden">
-        <h1>You died!</h1>
+        <h1>¡Eliminado!</h1>
         <p>
-          Oops, it looks like you were moving too much or your reached the
-          timeout...
+          Oops, parece que te la muñeca te ha visto moviéndote o se ha terminado la cuenta atrás.
         </p>
         <button class="cta replay1 is-ready">Replay</button>
       </section>
 
       <section class="win is-hidden">
-        <h1>You won!</h1>
-        <p>Well done, you survived... for now.</p>
-        <button class="cta replay2 is-ready">Replay</button>
+        <h1>¡Has ganado!</h1>
+        <p>Bien hecho carratalita, has sobrevivido... Por ahora.</p>
+        <button class="cta replay2 is-ready">Repetir</button>
       </section>
     </div>
 
     <footer>
       Made by
-      <a href="https://twitter.com/devdevcharlie">Charlie Gerard</a> using
+      <a href="https://twitter.com/mrm8488">Manu Romero</a> using
       TensorFlow.js. Inspired by
-      <a href="https://twitter.com/Mamboleoo">Louis Hoebregts</a>'
-      <a href="https://codepen.io/Mamboleoo/pen/abydvaG">original demo</a>
+      <a href="https://twitter.com/devdevcharlie">Charlie dev</a>
     </footer>
     <script src="index.js"></script>
   </body>
